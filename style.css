@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column; /* Eta add kora khub important */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Upore niche margin rakhar jonno */
+}
+
+
+.game-container {
+    background-color: #16213e;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Screen Management */
+.screen {
+    display: none;
+}
+.screen.active {
+    display: block;
+}
+
+/* Character Selection */
+h1 {
+    color: #e94560;
+    margin-bottom: 10px;
+}
+.character-buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.character-buttons button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #0f3460;
+    color: white;
+    border: 2px solid #e94560;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.character-buttons button:hover {
+    background-color: #e94560;
+    transform: scale(1.02);
+}
+
+/* Game Area */
+h2 {
+    font-size: 20px;
+    color: #a2a8d3;
+    margin-bottom: 20px;
+}
+#current-player {
+    color: #e94560;
+}
+.hangman-container {
+    margin: 20px auto;
+    background-color: #1a1a2e;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+}
+#word-display {
+    font-size: 35px;
+    letter-spacing: 15px;
+    margin: 30px 0;
+    font-weight: bold;
+}
+#msg {
+    font-size: 20px;
+    font-weight: bold;
+    height: 30px;
+    margin-bottom: 20px;
+}
+.win { color: #4caf50; }
+.lose { color: #f44336; }
+
+/* Keyboard */
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+.key {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #0f3460;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.key:hover { background-color: #e94560; }
+.key:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Restart Button */
+#restart-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#restart-btn:hover {
+    background-color: #ff5773;
+}
+.hidden {
+    display: none !important;
+}
+footer {
+    text-align: center;
+    color: #a2a8d3;
+    font-size: 14px;
+    margin-top: 20px; /* Game box theke ektu niche namiye dibe */
+    width: 100%;
+}
+

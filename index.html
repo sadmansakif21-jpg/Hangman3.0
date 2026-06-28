@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>THREE IDIOTS GAME</h1>
+</header>
+    <div class="game-container">
+        <div id="selection-screen" class="screen active">
+            <h1>Choose Your Character</h1>
+            <p>Select a player to start the game</p>
+            <div class="character-buttons">
+                <button onclick="startGame('SOHU')">SOHU</button>
+                <button onclick="startGame('MEHU')">MEHU</button>
+                <button onclick="startGame('SADU')">SADU</button>
+            </div>
+        </div>
+
+        <div id="game-screen" class="screen">
+            <h2>Player: <span id="current-player"></span></h2>
+            
+            <div class="hangman-container">
+                <canvas id="hangman-canvas" width="200" height="250"></canvas>
+            </div>
+
+            <div id="word-display"></div>
+            <p id="msg"></p>
+
+            <div id="keyboard"></div>
+
+            <button id="restart-btn" onclick="resetGame()" class="hidden">Play Again</button>
+        </div>
+    </div>
+
+    <footer>  
+        <p>© 2026 AI Tech BD | All Rights Reserved. Developed by SADMAN AS</p>  
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
