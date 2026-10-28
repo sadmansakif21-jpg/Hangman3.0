@@ -1,5 +1,4 @@
-const words = [ "APPLE","TIGER","HOUSE","PLANE","LIGHT","MANGO","WATER","BOTTLE","SUGAR","PLATE","SPOON","SNAKE","PADMA","SOHA","MEHUU"
-];
+const words = [ "APPLE","TIGER","HOUSE","PLANE","LIGHT","MANGO","WATER","BOTTLE","SUGAR","PLATE","SPOON","SNAKE","PADMA"];
 let targetWord = "";
 let guessedWord = [];
 let mistakes = 0;
